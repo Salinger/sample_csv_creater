@@ -5,7 +5,7 @@ df <- read.csv(
     )
 result <- group_by(df,user_id) %.%
     summarise(
-        payment_avg=mean(payment)
+        payment_avg=sum(payment)
         )
 end_time <- proc.time() - start_time
 print(end_time)
