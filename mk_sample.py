@@ -33,7 +33,10 @@ def create_recode():
     return [user_id, action, item_type, payment]
 
 
-def parse_recode(l):
+def main():
+    create_dataset()
     return
 
-create_dataset()
+
+if __name__ == "__main__":
+    main()
